@@ -1,0 +1,16 @@
+<div class="row headerRow">
+  <div class="col-sm-9">
+    <nav mat-tab-nav-bar>
+      <a mat-tab-link routerLink="/general" routerLinkActive #general="routerLinkActive" [active]="general.isActive">
+        General </a>
+      <a mat-tab-link routerLink="/related" routerLinkActive #related="routerLinkActive" [active]="related.isActive">
+        Related </a>
+      <a mat-tab-link routerLink="/summary" routerLinkActive #summary="routerLinkActive" [active]="summary.isActive">
+        Summary </a>
+    </nav>
+  </div>
+  <div class="col-sm-3 headerAction">
+    <mat-icon class="headerIcon">search</mat-icon>
+    <mat-icon class="headerIcon" (click)="openDialog()">add</mat-icon>
+  </div>
+</div>
